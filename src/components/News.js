@@ -36,6 +36,7 @@ export class News extends Component {
     const Url = `https://newsapi.org/v2/top-headlines?country=${this.props.country}&category=${this.props.category}&apiKey=cba6d68c52e54231aeff4285ef8d31e4&page=${this.state.page}&pageSize=${this.props.pageSize}`;
     this.setState({ loading: true });
     let data = await fetch(Url);
+    console.log("this is your data-----------", data);
     this.props.setProgress(30);
     let ParsedData = await data.json();
     this.props.setProgress(70);
