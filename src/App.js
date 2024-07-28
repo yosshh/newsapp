@@ -14,7 +14,7 @@ import React, { Component } from 'react'
 export default class App extends Component {
   // pageSize=[10]
   //  c = 'yash'
-  APIKey=process.env.REACT_APP_NEWS_API
+  APIKey="cba6d68c52e54231aeff4285ef8d31e4"
   state={
     progress:0
   }
